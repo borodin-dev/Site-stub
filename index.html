@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>B.Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head-text">
+            <p class="head-text__title">We are currently working on something awesome. Stay tuned!</p>
+        </div>
+        <div class="contact-form">
+            <p class="contact-form__title">If you have project or proposition as for job for us you can fill form below and get in touch with us</p>
+            <form id="register" role="form">
+                <input type="text" placeholder="Full Name" id="name" required>
+                <input type="text" placeholder="Subject" id="theme" required>
+                <input type="email" placeholder="Email" id="mail" required>
+                <input type="text" placeholder="Skype" id="skype" required>
+                <textarea name="text" placeholder="Your Message" cols="30" rows="7" id="text" required></textarea>
+                <button id="singlebutton">Send</button>
+            </form>
+        </div>
+    </div>
+    <div id="screen"></div>
+    <div id="modal">
+        <div class="modal-header">
+            <button class="modal-header__btn">x</button>
+        </div>
+        <div class="modal-content">
+            <p>THANKS!</p>
+            <p>We got your message and will contact you as soon as possible</p>
+        </div>
+    </div>
+    <div id="screenError"></div>
+    <div id="modalError">
+        <div class="modal-header">
+            <button class="modal-header__btn">x</button>
+        </div>
+        <div class="modal-content">
+            <p>OOOOPS!</p>
+            <p>Something went wrong. Sorry for that, and please, try again.</p>
+        </div>
+    </div>
+    <script src="jquery.3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
