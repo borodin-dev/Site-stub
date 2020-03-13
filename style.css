@@ -2,6 +2,10 @@
     font-family: Raleway;
     src: url('./Raleway-Regular.ttf');
 }
+@font-face {
+    font-family: 'Exo';
+    src: url('./Exo-Regular.otf');
+}
 *, :after, :before {
     box-sizing: border-box;
 }
@@ -11,7 +15,7 @@ body{
     background-image: url(naples-wallpaper-shadow.jpg);
     background-size: cover;
     font-size: 16px;
-    font-family: Raleway;
+    font-family: Raleway, serif;
 }
 .container{
     width: 600px;
@@ -43,32 +47,37 @@ input{
 #mail{
     margin-right: 16px;
 }
-textarea{
-    width: 100%;
-}
 button{
     width: 150px;
     border: none;
     padding: 10px;
     margin-top: 25px;
-    background-color: darkcyan;
+    background-color: #62bb83;
     color: #fff;
-    font-family: Raleway;
+    font-family: 'Exo', serif;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.3s;
     cursor: pointer;
-
 }
 button:focus {outline:0;}
 button:hover{
-    background-color: #00bebe;
+    background-color: #3eab64;
 }
 
 body img{
     display: none;
+}
+textarea[name='message'] {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+}
+input, textarea[name='message']::placeholder {
+    font-family: 'Exo', serif;
+    font-size: 13px;
 }
 #screen, #screenError, #modal, #modalError{
     display: none;
